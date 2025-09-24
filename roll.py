@@ -2,9 +2,7 @@ import telebot
 import re
 
 def roll(message, bot):
-    # Ask the user for a channel link
-    bot.send_message(message.chat.id, "Send a channel link from which you want to get random media")
-
+    
     # Define a handler for the next message only
     def process_channel_link(msg):
         channel_link = msg.text
